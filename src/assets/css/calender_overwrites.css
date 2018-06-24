@@ -1,0 +1,25 @@
+.calender .closeBtn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer;
+  color: #b4acac; }
+
+.calender .DateRangePicker__PaginationArrow {
+  display: none !important; }
+
+.calender .DateRangePicker__MonthHeader {
+  text-align: left;
+  padding: 8px; }
+
+.calender .DateRangePicker__WeekdayHeading abbr[title] {
+  color: #dbdbdb; }
+
+.calender .DateRangePicker__Date--weekend {
+  background-color: transparent; }
+
+.calender .DateRangePicker__Date {
+  border: 0 solid #f4f5f6; }
+
+.calender .DateRangePicker__Month {
+  margin: 0; }

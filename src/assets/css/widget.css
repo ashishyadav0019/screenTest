@@ -1,0 +1,147 @@
+.text1 {
+  color: #35a3fd;
+  font-size: .7rem; }
+
+.text2 {
+  font-size: 1rem;
+  font-weight: 700; }
+
+.text3 {
+  color: #393e42;
+  font-size: .6rem; }
+
+.text4 {
+  color: #a6a8a9;
+  font-size: .5rem; }
+
+.text5 {
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+.text-center {
+  text-align: center; }
+
+.fd-row {
+  display: flex;
+  flex-direction: row; }
+
+.m-top-6 {
+  margin-top: 6px; }
+
+.m-left-6 {
+  margin-left: 6px; }
+
+.flex-center {
+  display: flex;
+  justify-content: center; }
+
+.widgetContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: relative; }
+  .widgetContainer .widgetLayout {
+    height: 90vh;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    background-color: #fff;
+    width: 275px;
+    min-height: 450px;
+    overflow: auto;
+    margin-top: 10px; }
+    .widgetContainer .widgetLayout .cardName {
+      font-size: .8rem;
+      padding: 8px 12px;
+      color: #777575;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+    .widgetContainer .widgetLayout .location, .widgetContainer .widgetLayout .destination {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 8px 16px;
+      border-bottom: 1px solid #efefef; }
+      .widgetContainer .widgetLayout .location .from, .widgetContainer .widgetLayout .location .to, .widgetContainer .widgetLayout .destination .from, .widgetContainer .widgetLayout .destination .to {
+        max-width: 38%;
+        flex-basis: 38%; }
+      .widgetContainer .widgetLayout .location .to, .widgetContainer .widgetLayout .destination .to {
+        margin-left: 12px; }
+      .widgetContainer .widgetLayout .location .switchIcon, .widgetContainer .widgetLayout .destination .switchIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 16%;
+        flex-basis: 16%; }
+        .widgetContainer .widgetLayout .location .switchIcon .roundTrip, .widgetContainer .widgetLayout .destination .switchIcon .roundTrip {
+          background: url("../img/roundtrip.png") no-repeat center;
+          width: 20px;
+          height: 20px;
+          border: 1px solid #eee;
+          margin: 8px;
+          border-radius: 25px;
+          cursor: pointer;
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+    .widgetContainer .widgetLayout .destination .departure, .widgetContainer .widgetLayout .destination .return {
+      max-width: 38%;
+      flex-basis: 38%; }
+    .widgetContainer .widgetLayout .destination .return {
+      margin-left: 12px; }
+    .widgetContainer .widgetLayout .destination .partition {
+      display: flex;
+      max-width: 16%;
+      flex-basis: 16%; }
+    .widgetContainer .widgetLayout .travellers {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 8px 16px;
+      border-bottom: 1px solid #efefef; }
+      .widgetContainer .widgetLayout .travellers .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    .widgetContainer .widgetLayout .primaryBtn {
+      background: #35a3fd;
+      font-size: .8rem;
+      padding: 8px 30px;
+      border-radius: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer; }
+    .widgetContainer .widgetLayout .calender {
+      margin-top: 10px;
+      position: fixed;
+      width: 275px;
+      height: 75vh;
+      background: #fff;
+      top: 0;
+      max-width: 340px;
+      min-height: 450px;
+      animation: calendar 0.3s ease-in-out; }
+
+@media only screen and (max-width: 767px) {
+  .widgetContainer {
+    margin-top: 0; }
+    .widgetContainer .widgetLayout {
+      height: 100vh;
+      margin-top: 0; }
+      .widgetContainer .widgetLayout .calender {
+        position: absolute;
+        height: 100%;
+        overflow: hidden;
+        margin-top: 0; } }
+
+@keyframes calendar {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .roundTrip {
+    background: url("../img/roundtrip@2x.png") no-repeat center; } }
+
+@media only screen and (-o-min-device-pixel-ratio: 9 / 4), only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
+  .roundTrip {
+    background: url("../img/roundtrip@2x.png") no-repeat center; } }
